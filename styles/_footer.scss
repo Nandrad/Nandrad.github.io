@@ -1,0 +1,56 @@
+footer{
+    text-align: center;
+
+    h4{
+        font-family: $fontplex;
+        font-size: $fontsizexxs;
+        color: $color_azul_font;
+        margin-top: 24px;
+        line-height: 22px;
+        padding: 0;
+    }
+
+    .redes_sociales{
+        margin:16px 14% 31px 14%;
+
+        .fab{
+            margin-right: 30px;
+            width: 16px;
+            height: 28px;
+            color: $color_azul_font;
+        }
+
+    }
+}
+
+
+@media screen and (min-width: 1220px) {
+    footer{
+        height: 95px;
+        display: flex;
+        justify-content: space-between;
+
+        h4{
+            margin: 0;
+            padding: 36px 0px 31px 7%;
+        }
+
+        .redes_sociales{
+            margin-top: 36px;
+            margin-right: 7%;
+
+            .fab{
+                margin-left: 36px;
+                margin-right: 0;
+                width: 18px;
+                height: 28px;
+
+            }
+        }
+        
+    }
+    .redes_sociales .fab:hover{
+        color:$color_gris;
+    }
+    
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Podcast Channel - Nadia Andrade - </title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!--Fuentes de google-->
+    
+    <!--font-family: 'IBM Plex Sans', sans-serif;-->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">  
+
+    <!--font-family: 'IBM Plex Mono', monospace;-->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">  
+</head>
+
+<body>
+    <!--ACA ARRANCA EL HEADER-->
+    <header>
+        <img class="logo" src="./Images/assets/logo.svg" alt="logo">
+        
+        <nav class="menu">
+        <input type="checkbox"  id="menu-hambur">
+            <label class="icons" for="menu-hambur">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </label>
+        
+            <ul class="desplegable">
+                <li><a href="#episodios">EPISODIOS</a></li>
+                <li><a href="#nosotros">NOSOTROS</a></li>
+                <li><a href="#entrevistas">ENTREVISTAS</a></li>
+                <li><a href="#topicos">TOPICOS</a></li>
+            </ul>
+        </nav>
+
+    </header>   
+    <!--ACA TERMINA EL HEADER--> 
+
+    <!--Primera seccion-->
+    <main>
+        <section class="hello-world">
+            <h1>Hello <span class="world"> world</span> <br>pale blue dot<span class="punto">.</span></h1>
+            <p class="mobile">Un podcasts que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p>
+            <p class="desktop">El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
+            <div class="boton"><a href="#nosotros">CONOCÉ MÁS</a></div>
+        </section>
+
+        <!-- / Primera seccion-->
+
+        <!--seccion de episodios-->
+        <section class="episodios" id="episodios">
+            <h2>Episodios</h2>
+
+            <div class="episodios_container ">
+                <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" allow="encrypted-media" class="iframe1"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt"  allow="encrypted-media" class="iframe2"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD"  allow="encrypted-media" class="iframe3"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ"  allow="encrypted-media" class="iframe4"></iframe>
+            </div>
+        </section>
+
+        <!-- / seccion de episodios-->
+
+        <!--seccion sobre nosotros-->
+        <section class="nosotros" id="nosotros">
+            <div class="phone_container">
+            <img src="./Images/assets/phone.png" alt="The Secret History of Women in Coding">
+            </div>
+            <div class="nosotros_text">
+                <h2>De dónde <br id="corte_tit">venimos</h2>
+                <br id="salto_tit">
+                <p>Our posturings, our imagined self-importance,the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.
+                <br>
+                <br>
+                Our planet is a lonely speck in the great, enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will  come from elsewhere to save us from ourselves.
+                </p>
+            </div>
+        </section>
+
+            <!-- / seccion sobre nosotros-->
+
+            <!--seccion de entrevistas-->
+        <section class="entrevistas" id="entrevistas">
+
+            <h2>Invitadas/os estelares</h2>
+            <div class="imagenes">
+                <img class="img1" src="./Images/assets/grace-hopper.png" alt="Grace_hopper">
+                <img class="img2" src="./Images/assets/Katie-Bouman.png" alt="Katie_Bouman">
+                <img class="img3" src="./Images/assets/Margaret_Hamilton.png" alt="Margaret_Hamilton">
+                <img class="img4" src="./Images/assets/E.R.A.Univac.png" alt="An E.R.A.Univac 1103 computer in the 1950s">
+                <img class="img5" src="./Images/assets/Computer_operators.png" alt="Computer operators with an Eniac — the world’s first programmable general-purpose computer">
+                <img class="img6" src="./Images/assets/susan-kare.png" alt="susan_kare">
+            </div>
+        </section>
+
+            <!-- / seccion de entrevistas-->
+
+            <!--seccion de topicos-->
+
+        <section class="topicos" id="topicos">
+            <h2>Algunos de nuestros temas</h2>
+            <div class="topicos_container">
+
+                <div class="topico 1">
+                    <img src="./Images/assets/icon1.svg" alt="">
+                    <p id="1">Trabajo Remoto</p>
+                </div>
+
+                <div class="topico 2">
+                    <img src="./Images/assets/icon2.svg" alt="">
+                    <p id="2">Repensando la programación</p>
+                </div>
+
+                 <div class="topico 3">
+                    <img src="./Images/assets/icon3.svg" alt="">
+                    <p id="3">Bases del Código</p>
+                </div>
+
+                <div class="topico 4">
+                    <img src="./Images/assets/icon4.svg" alt="">
+                    <p id="4">Seguridad Informática</p>
+                </div>
+            </div>
+        </section>
+        <!-- / seccion de topicos-->
+
+        <!--seccion de novedades-->
+        <section class="novedades">
+            <h2>Querés las últimas novedades?</h2>
+            <div class="btn"><a href="#episodios">ESCUCHÁ LOS EPISODIOS</a></div>
+        </section>
+
+        <!-- / seccion de novedades-->
+    </main>
+
+    <!--ACA ARRANCA EL FOOTER-->
+    <footer>
+        <h4>© 2019— Hello blue pale dot </h4>
+        <div class="redes_sociales">
+            <a href="https://www.spotify.com" target="_blank"><i class="fab fa-spotify"></i></a>
+
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+
+            <a href="https://telegram.org" target="_blank"><i class="fab fa-telegram"></i></a>
+
+        </div>
+
+        <!-- / ACA TERMINA EL FOOTER-->
+    </footer>
+    <!--Mi font awesome-->
+    <script src="https://kit.fontawesome.com/b9ca4e50e4.js" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/6b831eed11.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+
+
+/*Estilos del HEADER*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 44px;
+    background: $color_blanco;
+
+    .menu{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        
+    }
+    .logo{
+        height: 24px;
+        width: 24px;
+        margin-left: 16px;
+
+    }
+}
+
+/*Estilos MENU HAMBURGUESA*/
+header input{
+    display: none;
+}
+
+
+header .icons .fa-times{
+    display: none;
+    height: 14px;
+    width: 14px;
+    margin-right: 16px;
+}
+
+header .icons .fa-bars{
+    height: 2px;
+    width: 18px;
+    margin-right: 16px;
+}
+
+header .desplegable{
+    position: absolute;
+    height: 224px;
+    background-color: $color_azul;
+    top: 44px;
+    left: 0;
+    right: 0;
+    display: none;
+
+    li{
+        list-style-type: none;
+    }
+
+    a{
+        font-family: $fontplex;
+        font-size: $fontsizexs;
+        color:$color_blanco;
+        letter-spacing: 0;
+        line-height: 28px;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 12px 16px;
+        display: block;
+    }
+}
+header li:first-child a{
+    padding-top: 16px;
+}
+header li:last-child a{
+    padding-bottom: 24px;
+}
+
+header input:checked~label .fa-times{ 
+    display: block;
+}
+
+header input:checked~ul{
+    display: block  ;
+}
+
+header input:checked~label .fa-bars{
+    display: none;
+}
+
+/********VERSION DESKTOP****************/
+
+@media(min-width:1024px){
+    /*HEADER*/
+    header{
+        height: 80px;
+
+        .logo{
+            height: 36px;
+            width: 36px;
+            margin-left: 100px;
+        }
+
+        .desplegable{
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: space-between;
+            position: static;
+            height: 100%;
+            background-color: transparent;
+        }
+    }
+    /*MENU HAMBURGUESA*/
+
+    .menu .icons .fa-bars{
+        display: none;
+    }
+
+    .menu #menu-hambur{
+        display: none;
+    }
+
+    .menu .desplegable{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        li{
+            margin: 0;
+            padding: 26px ;
+        }
+        
+        li:first-child a{
+            padding: 0 24px 0 0;
+        }
+
+        li:last-child a{
+            padding: 0 0 0 24px;
+
+        }  
+    }
+    .menu .desplegable a{
+        color: $color_azul_font;
+
+    }
+    .desplegable li a:hover{
+            color:$color_verde;
+            text-decoration: line-through;
+            width: 87px;
+        
+    }
+    .desplegable li a:active{
+        color:$color_link_active;
+        text-decoration: line-through;
+        width: 87px;
+    }
+    
+}
+
+
+
+
+
+
+
